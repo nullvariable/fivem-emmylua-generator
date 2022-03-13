@@ -27,9 +27,9 @@ function N_0xa213b11dff526300() end
 
 ---@namespace: DLC
 ---@see https://docs.fivem.net/natives/?_0x46E2B844905BC5F0
----@param undefined cs_type(AnyPtr
----@return bool
-function HasCloudRequestsFinished( undefined ) end
+---@param unused any
+---@return any, bool
+function HasCloudRequestsFinished( unused ) end
 
 ---@namespace: DLC
 ---@see https://docs.fivem.net/natives/?_0x9489659372A81585

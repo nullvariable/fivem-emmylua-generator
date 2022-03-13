@@ -14,9 +14,13 @@ function AddDoorToSystem( doorHash, modelHash, x, y, z, p5, scriptDoor, isLocal 
 
 ---@namespace: OBJECT
 ---@see https://docs.fivem.net/natives/?_0x85B6C850546FDDE2
----@param undefined cs_type(Any
+---@param garageHash number hash
+---@param p1 boolean
+---@param p2 boolean
+---@param p3 boolean
+---@param p4 any
 ---@return bool
-function AreEntitiesEntirelyInsideGarage( undefined ) end
+function AreEntitiesEntirelyInsideGarage( garageHash, p1, p2, p3, p4 ) end
 
 ---@namespace: OBJECT
 ---@see https://docs.fivem.net/natives/?_0x8DC39368BDD57755
@@ -27,9 +31,8 @@ function AttachPortablePickupToPed( pickupObject, ped ) end
 
 ---@namespace: OBJECT
 ---@see https://docs.fivem.net/natives/?_0x190428512B240692
----@param undefined cs_type(Any
 ---@return void
-function ClearObjectsInsideGarage( undefined ) end
+function ClearObjectsInsideGarage( garageHash, vehicles, peds, objects, isNetwork ) end
 
 ---@namespace: OBJECT
 ---@see https://docs.fivem.net/natives/?_0xE7E4C198B0185900
@@ -41,9 +44,8 @@ function BreakObjectFragmentChild( p0, p1, p2 ) end
 
 ---@namespace: OBJECT
 ---@see https://docs.fivem.net/natives/?_0xDA05194260CDCDF9
----@param undefined cs_type(Any
 ---@return void
-function ClearGarageArea( undefined ) end
+function ClearGarageArea( garageHash, isNetwork ) end
 
 ---@namespace: OBJECT
 ---@see https://docs.fivem.net/natives/?_0x673966A0C0FD7171
@@ -97,9 +99,15 @@ function CreateNonNetworkedAmbientPickup( pickupHash, posX, posY, posZ, flags, v
 
 ---@namespace: OBJECT
 ---@see https://docs.fivem.net/natives/?_0x509D5878EB39E842
----@param undefined cs_type(integer
+---@param modelHash number Hash
+---@param x number
+---@param y number
+---@param z number
+---@param isNetwork boolean
+---@param netMissionEntity boolean
+---@param doorFlag boolean
 ---@return object
-function CreateObject( undefined ) end
+function CreateObject( modelHash, x, y, z, isNetwork, netMissionEntity, doorFlag ) end
 
 ---@namespace: OBJECT
 ---@see https://docs.fivem.net/natives/?_0x891804727E0A98B7

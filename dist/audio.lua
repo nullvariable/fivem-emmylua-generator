@@ -60,9 +60,8 @@ function CancelMusicEvent( eventName ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x845FFC3A4FEEFA3E
----@param undefined Any
----@return // 0x845ffc3a4feefa3e 0x86e995d1
-function AudioIsScriptedMusicPlaying( undefined ) end
+---@return boolean
+function AudioIsScriptedMusicPlaying() end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x1B9025BDA76822B6
@@ -167,9 +166,9 @@ function FreezeRadioStation( radioStation ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x5E203DA2BA15D436
----@param undefined Any
----@return // 0x5e203da2ba15d436
-function GetAmbientVoiceNameHash( undefined ) end
+---@param ped entity
+---@return number hash
+function GetAmbientVoiceNameHash( ped ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0xD57AAAE0E2214D11
@@ -381,9 +380,9 @@ function IsAnySpeechPlaying( ped ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x66E49BF55B4B1874
----@param undefined integer
----@return // 0x66e49bf55b4b1874 0x27305d37
-function IsMissionNewsStoryUnlocked( undefined ) end
+---@param newsStory integer
+---@return boolean
+function IsMissionNewsStoryUnlocked( newsStory ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x19A30C23F5827F8A
@@ -761,9 +760,9 @@ function N_0xc1805d05e6d4fe10( vehicle ) end
 ---@see https://docs.fivem.net/natives/?_0xBF4DC1784BE94DFA
 ---@param ped Ped
 ---@param p1 boolean
----@param undefined cs_type(Any
+---@param hash number
 ---@return void
-function N_0xbf4dc1784be94dfa( ped, p1, undefined ) end
+function N_0xbf4dc1784be94dfa( ped, p1, hash ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0xBEF34B1D9624D5DD
@@ -838,9 +837,10 @@ function N_0xf1f8157b8c3f171c( vehicle, p1, p2 ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0xD2CC78CD3D0B50F9
----@param undefined cs_type(Any
+---@param hash number
+---@param toggle boolean
 ---@return void
-function OverridePlayerGroundMaterial( undefined ) end
+function OverridePlayerGroundMaterial( hash, toggle ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0xF3365489E0DD50F9
@@ -863,9 +863,10 @@ function PauseScriptedConversation( p0 ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x75773E11BA459E90
----@param undefined cs_type(Any
+---@param hash number
+---@param toggle boolean
 ---@return void
-function OverrideMicrophoneSettings( undefined ) end
+function OverrideMicrophoneSettings( hash, toggle ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x3CDC1E622CCE0356
@@ -1234,9 +1235,9 @@ function SetAggressiveHorns( toggle ) end
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x9A53DED9921DE990
 ---@param ped Ped
----@param undefined cs_type(Any
+---@param hash number
 ---@return void
-function SetAmbientVoiceNameHash( ped, undefined ) end
+function SetAmbientVoiceNameHash( ped, hash ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0xF3638DAE8C4045E1
@@ -1248,9 +1249,11 @@ function SetAmbientZoneListStatePersistent( ambientZone, p1, p2 ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0xBDA07E5950085E46
----@param undefined cs_type(AnyPtr
+---@param zoneName string
+---@param p1 boolean
+---@param p2 boolean
 ---@return void
-function SetAmbientZoneState( undefined ) end
+function SetAmbientZoneState( zoneName, p1, p2 ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x1D6650420CEC9D3B
@@ -1482,9 +1485,10 @@ function SetRadioToStationName( stationName ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x06C0023BED16DD6B
----@param undefined cs_type(Any
+---@param doorHash number hash
+---@param toggle boolean
 ---@return void
-function SetScriptUpdateDoorAudio( undefined ) end
+function SetScriptUpdateDoorAudio( doorHash, toggle ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x2CB0075110BE1E56
@@ -1497,9 +1501,9 @@ function SetRadioTrackMix( radioStationName, mixName, p2 ) end
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x1FEF0683B96EBCF2
 ---@param vehicle Vehicle
----@param undefined cs_type(ScrHandlePtr
+---@param toggle boolean
 ---@return void
-function SetSirenWithNoDriver( vehicle, undefined ) end
+function SetSirenWithNoDriver( vehicle, toggle ) end
 
 ---@namespace: AUDIO
 ---@see https://docs.fivem.net/natives/?_0x399D2D3B33F1B8EB

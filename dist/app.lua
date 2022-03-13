@@ -6,9 +6,8 @@ function AppClearBlock() end
 
 ---@namespace: APP
 ---@see https://docs.fivem.net/natives/?_0x846AA8E7D55EE5B6
----@param undefined integer
----@return // 0x846aa8e7d55ee5b6 0x72bde002
-function AppDataValid( undefined ) end
+---@return boolean
+function AppDataValid() end
 
 ---@namespace: APP
 ---@see https://docs.fivem.net/natives/?_0xE8E3FCF72EAC0EF8
@@ -28,9 +27,9 @@ function AppDeleteAppData( appName ) end
 
 ---@namespace: APP
 ---@see https://docs.fivem.net/natives/?_0xD3A58A12C77D9D4B
----@param undefined void
----@return // 0xd3a58a12c77d9d4b 0x2942aad2
-function AppGetInt( undefined ) end
+---@param property string
+---@return number
+function AppGetInt( property ) end
 
 ---@namespace: APP
 ---@see https://docs.fivem.net/natives/?_0x1514FB24C02C2322

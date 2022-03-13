@@ -44,9 +44,11 @@ function N_0x6d6840cee8845831( action ) end
 
 ---@namespace: BRAIN
 ---@see https://docs.fivem.net/natives/?_0x3CDC7136613284BD
----@param undefined cs_type(AnyPtr
+---@param scriptName string
+---@param activationRange number
+---@param p2 number
 ---@return void
-function RegisterWorldPointScriptBrain( undefined ) end
+function RegisterWorldPointScriptBrain( scriptName, activationRange, p2 ) end
 
 ---@namespace: BRAIN
 ---@see https://docs.fivem.net/natives/?_0x4D953DF78EBF8158

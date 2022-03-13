@@ -98,9 +98,9 @@ function CreateCam( camName, active ) end
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0xA516C198B7DCA1E1
----@param undefined Any
----@return // 0xa516c198b7dca1e1 0xfa3a16e7
-function ClampGameplayCamPitch( undefined ) end
+---@param minimum number
+---@param maximum number
+function ClampGameplayCamPitch( minimum, maximum ) end
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0x8DB3F12A02CAEF72
@@ -157,9 +157,9 @@ function CreateCamWithParams( camName, posX, posY, posZ, rotX, rotY, rotZ, fov, 
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0x8F993D26E0CA5E8E
----@param undefined Any
----@return // 0x8f993d26e0ca5e8e 0x749909ac
-function ClampGameplayCamYaw( undefined ) end
+---@param minimum number
+---@param maximum number
+function ClampGameplayCamYaw( minimum, maximum ) end
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0x741B0129D4560F31
@@ -1419,9 +1419,9 @@ function SetGameplayCoordHint( x, y, z, duration, blendOutDuration, blendInDurat
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0x11FA5D3479C7DD47
----@param undefined cs_type(Any
+---@param vehicleModel number hash
 ---@return void
-function SetGameplayCamVehicleCameraName( undefined ) end
+function SetGameplayCamVehicleCameraName( vehicleModel ) end
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0x189E955A8313E298
@@ -1537,9 +1537,10 @@ function SetUseHiDof() end
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0xDCD4EA924F42D01A
----@param undefined Any
----@return // 0xdcd4ea924f42d01a 0x1a75dc9a
-function SetWidescreenBorders( undefined ) end
+---@param p0 boolean
+---@param p1 number
+---@return void
+function SetWidescreenBorders( p0, p1 ) end
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0x6A25241C340D3822
@@ -1583,9 +1584,9 @@ function StopCutsceneCamShaking() end
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0x7660C6E75D3A078E
----@param undefined cs_type(Any
+---@param p0 number hash
 ---@return void
-function StopCinematicShot( undefined ) end
+function StopCinematicShot( p0 ) end
 
 ---@namespace: CAM
 ---@see https://docs.fivem.net/natives/?_0xC819F3CBB62BF692

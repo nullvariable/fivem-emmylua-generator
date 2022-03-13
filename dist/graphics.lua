@@ -965,9 +965,13 @@ function EndScaleformMovieMethodReturnValue() end
 
 ---@namespace: GRAPHICS
 ---@see https://docs.fivem.net/natives/?_0xD77EDADB0420E6E0
----@param undefined cs_type(Any
+---@param x number
+---@param y number
+---@param z number
+---@param radius number
+---@param duration number
 ---@return void
-function FadeDecalsInRange( undefined ) end
+function FadeDecalsInRange( x, y, z, radius, duration ) end
 
 ---@namespace: GRAPHICS
 ---@see https://docs.fivem.net/natives/?_0xAE4E8157D9ECF087

@@ -16,7 +16,7 @@ function AddReplaceTexture( origTxd, origTxn, newTxd, newTxn ) end
 function AddAudioSubmixOutput( submixId, outputSubmixId ) end
 
 ---@namespace: CFX
----@see https://docs.fivem.net/natives/?_
+---@see https://docs.fivem.net/natives/?_0x5BA35AAF
 ---@param keyFilter char* The key to check for, or null.
 ---@param bagFilter char* The bag ID to check for, or null.
 ---@param handler func The handler function.

@@ -1,9 +1,9 @@
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0xC098810437312FFF
----@param undefined integer
----@return // 0xc098810437312fff 0x59352658
-function GetDlcVehicleModLockHash( undefined ) end
+---@param hash integer
+---@return any
+function GetDlcVehicleModLockHash( hash ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x341DE7ED1D2A1BFD
@@ -44,17 +44,15 @@ function GetDlcWeaponComponentDataSp( dlcWeaponIndex, dlcWeapCompIndex, Componen
 ---@see https://docs.fivem.net/natives/?_0x6CF598A2957C2BF8
 ---@param dlcWeaponIndex integer
 ---@param dlcWeapCompIndex integer
----@param undefined cs_type(AnyPtr
----@return bool
-function GetDlcWeaponComponentData( dlcWeaponIndex, dlcWeapCompIndex, undefined ) end
+---@return any, any
+function GetDlcWeaponComponentData( dlcWeaponIndex, dlcWeapCompIndex ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x6C93ED8C2F74859B
 ---@param componentHash Hash
 ---@param forcedComponentIndex integer
----@param undefined cs_type(AnyPtr
----@return void
-function GetForcedComponent( componentHash, forcedComponentIndex, undefined ) end
+---@return any, any, any
+function GetForcedComponent( componentHash, forcedComponentIndex ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x79923CD21BECE14E
@@ -81,9 +79,10 @@ function GetDlcWeaponDataSp( dlcWeaponIndex, outData ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0xE1CA84EBF72E691D
----@param undefined cs_type(Any
----@return void
-function GetForcedProp( undefined ) end
+---@param componentHash, number HASH
+---@param forcedPropIndex number
+---@return number, any, any
+function GetForcedProp( componentHash, forcedPropIndex ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x0368B3A838070348
@@ -148,9 +147,9 @@ function GetShopPedComponent( componentHash, outComponent ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x017568A8182D98A6
----@param undefined cs_type(Any
+---@param componentHash number HASH
 ---@return int
-function GetShopPedApparelForcedPropCount( undefined ) end
+function GetShopPedApparelForcedPropCount( componentHash ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0xD40AAC51E8E4C663
@@ -173,9 +172,10 @@ function GetShopPedOutfitLocate( p0 ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x19F2A026EDF0013F
----@param undefined cs_type(Any
----@return bool
-function GetShopPedOutfitComponentVariant( undefined ) end
+---@param outfit number HASH
+---@param slot number
+---@return any, boolean, any
+function GetShopPedOutfitComponentVariant( outfit, slot ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x6D793F03A631FE56
@@ -186,9 +186,10 @@ function GetShopPedQueryOutfit( outfitIndex, outfit ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0xA9F9C2E0FDE11CBB
----@param undefined cs_type(Any
----@return bool
-function GetShopPedOutfitPropVariant( undefined ) end
+---@param outfitHash number HASH
+---@param variantIndex number
+---@return any, boolean, any
+function GetShopPedOutfitPropVariant( outfitHash, variantIndex ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x249E310B2D920699
@@ -199,17 +200,16 @@ function GetShopPedQueryComponent( componentId, outComponent ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x5D5CAFF661DDF6FC
----@param undefined cs_type(Any
----@return void
-function GetShopPedProp( undefined ) end
+---@param componentHash number HASH
+---@return any
+function GetShopPedProp( componentHash ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x6E11F282F11863B6
----@param componentHash Hash
+---@param componentHash number Hash
 ---@param variantComponentIndex integer
----@param undefined cs_type(AnyPtr
----@return void
-function GetVariantComponent( componentHash, variantComponentIndex, undefined ) end
+---@return any, any, table
+function GetVariantComponent( componentHash, variantComponentIndex ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0xDE44A00999B2837D
@@ -234,9 +234,10 @@ function InitShopPedComponent( outComponent ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0xD81B7F27BC773E66
----@param undefined cs_type(Any
----@return void
-function GetVariantProp( undefined ) end
+---@param componentHash number Hash
+---@param variantPropIndex number
+---@return any, number, number
+function GetVariantProp( componentHash, variantPropIndex ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0xEB0A2B758F7B850F
@@ -252,15 +253,15 @@ function LoadContentChangeSetGroup( hash ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x0564B9FF9631B82C
----@param undefined cs_type(Any
+---@param hash number Hash
 ---@return bool
-function IsDlcVehicleMod( undefined ) end
+function IsDlcVehicleMod( hash ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0xD4D7B033C3AA243C
----@param undefined cs_type(AnyPtr
+---@param itemHash number Hash
 ---@return bool
-function IsContentItemLocked( undefined ) end
+function IsContentItemLocked( itemHash ) end
 
 ---@namespace: FILES
 ---@see https://docs.fivem.net/natives/?_0x10144267DD22866C

@@ -30,6 +30,19 @@ These steps will generate the emmylua definitions for all the fivem natives and 
 
 For the files included, I used the [natives](https://github.com/citizenfx/natives) repo, and the [fivem source code](https://github.com/citizenfx/fivem) repo as the sources, along with copying the `codegen_types.lua` from the fivem core.
 
+### Known issues
+- Regex is hard, some signatures might be wrong. 
+- This doesn't update automatically, so signatures could change.
+- Some functions may have more return values than this generates a signature for (TODO item)
+- CFX decls don't have doc links
+
+### TODO / ROADMAP
+I may or may not ever get to these items but pull requests are welcome
+- update return signatures for functions that return multiple values
+- update regex to handle ctype strings in the docs (especially hash values)
+- Better function for CFX decls to have doc links
+- Combine function definitions for server/client overlap
+- add a comment for the api set function comments
 
 ### How to uninstall
 - Remove any VSCode settings you may have added

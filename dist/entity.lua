@@ -111,9 +111,8 @@ function CreateModelHideExcludingScriptObjects( x, y, z, radius, model, p5 ) end
 
 ---@namespace: ENTITY
 ---@see https://docs.fivem.net/natives/?_0xA72CD9CA74A5ECBA
----@param undefined Any
----@return // 0xa72cd9ca74a5ecba 0x2b83f43b
-function ClearEntityLastDamageEntity( undefined ) end
+---@param entity Entity
+function ClearEntityLastDamageEntity( entity ) end
 
 ---@namespace: ENTITY
 ---@see https://docs.fivem.net/natives/?_0x150E808B375A385A
@@ -1002,9 +1001,14 @@ function ProcessEntityAttachments( entity ) end
 
 ---@namespace: ENTITY
 ---@see https://docs.fivem.net/natives/?_0xD9E3006FB3CBD765
----@param undefined cs_type(Any
+---@param x number
+---@param y number
+---@param z number
+---@param radius number
+---@param model number HASH
+---@param p5 boolean
 ---@return void
-function RemoveModelHide( undefined ) end
+function RemoveModelHide( x, y, z, radius, model, p5 ) end
 
 ---@namespace: ENTITY
 ---@see https://docs.fivem.net/natives/?_0x61B6775E83C0DB6F
@@ -1044,17 +1048,16 @@ function SetCanClimbOnEntity( entity, toggle ) end
 
 ---@namespace: ENTITY
 ---@see https://docs.fivem.net/natives/?_0x9B1E824FFBB7027A
----@param undefined Any
----@return // 0x9b1e824ffbb7027a 0x8a30761c
-function ResetEntityAlpha( undefined ) end
+---@param entity Entity
+function ResetEntityAlpha( entity ) end
 
 ---@namespace: ENTITY
 ---@see https://docs.fivem.net/natives/?_0x44A0870B7E92D7C0
 ---@param entity Entity The entity to change the alpha for.
 ---@param alphaLevel integer The alpha level ranges from 0 to 255, but changes occur every 20% (every 51).
----@param undefined cs_type(integer
+---@param skin boolean Whether or not to change the alpha of the entity's skin.
 ---@return void
-function SetEntityAlpha( entity, alphaLevel, undefined ) end
+function SetEntityAlpha( entity, alphaLevel, skin ) end
 
 ---@namespace: ENTITY
 ---@see https://docs.fivem.net/natives/?_0x8339643499D1222E

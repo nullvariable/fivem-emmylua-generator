@@ -345,9 +345,14 @@ function N_0xdbf860cf1db8e599( p0 ) end
 ---@namespace: DATAFILE
 ---@see https://docs.fivem.net/natives/?_0xC84527E235FCA219
 ---@param data char*
----@param undefined cs_type(boolean
+---@param dataCount number
+---@param contentName string
+---@param description string
+---@param tagsCsv string
+---@param contentTypeName string
+---@param publish boolean
 ---@return bool
-function UgcCreateContent( data, undefined ) end
+function UgcCreateContent( data, dataCount, contentName, description, tagsCsv, contentTypeName, publish ) end
 
 ---@namespace: DATAFILE
 ---@see https://docs.fivem.net/natives/?_0x692D808C34A82143
@@ -360,10 +365,13 @@ function UgcSetPlayerData( contentId, rating, contentTypeName ) end
 ---@namespace: DATAFILE
 ---@see https://docs.fivem.net/natives/?_0x648E7A5434AF7969
 ---@param contentId char*
----@param data Any*
----@param undefined cs_type(boolean
----@return bool
-function UgcUpdateContent( contentId, data, undefined ) end
+---@param dataCount number
+---@param contentName string
+---@param description string
+---@param tagsCsv string
+---@param contentTypeName string
+---@return any, bool
+function UgcUpdateContent( contentId, dataCount, contentName, description, tagsCsv, contentTypeName ) end
 
 ---@namespace: DATAFILE
 ---@see https://docs.fivem.net/natives/?_0xA5EFC3E847D60507
