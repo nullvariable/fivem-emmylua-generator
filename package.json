@@ -1,0 +1,23 @@
+{
+  "name": "fivem_emmylua",
+  "version": "1.0.0",
+  "description": "fivem emmylua native stub generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.0.0",
+    "conf": "^10.1.1",
+    "fast-glob": "^3.2.11",
+    "globby": "^13.1.1",
+    "lodash": "^4.17.21"
+  },
+  "type": "module",
+  "bin": {
+    "gen": "./index.js"
+  }
+}
